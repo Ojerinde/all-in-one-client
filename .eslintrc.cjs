@@ -12,9 +12,8 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh", "prettier"],
   rules: {
-    "prettier/prettier": "error",
     "spaced-comment": "off",
-    "no-console": "warn",
+    "no-console": "off",
     "consistent-return": "off",
     "no-param-reassign": "off",
     "no-return-await": "off",
@@ -23,8 +22,15 @@ module.exports = {
     "prefer-destructuring": ["error", { object: true, array: false }],
     "no-unused-vars": ["error", { argsIgnorePattern: "prev|e|" }],
     "react/require-default-props": "off",
+    "arrow-body-style": ["off", "as-needed"],
     "react/no-unused-prop-types": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/no-unresolved": "off",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/button-has-type": "off",
+    "react/jsx-props-no-spreading": "off",
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
@@ -40,13 +46,19 @@ module.exports = {
       },
     ],
     "import/extensions": [
-      "error",
+      "off",
       "ignorePackages",
       {
         js: "never",
         jsx: "never",
         ts: "never",
         tsx: "never",
+      },
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
       },
     ],
   },

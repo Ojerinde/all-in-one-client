@@ -1,0 +1,128 @@
+.primary {
+  position: relative;
+  box-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  font-size: 1.8rem;
+  font-family: "Roboto" sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.primary:hover {
+  box-shadow:
+    0px 1.2rem 2.4rem 0px rgba(30, 30, 30, 0.32),
+    0px 2px 4px 0px rgba(30, 30, 30, 0.12);
+  background: #0062cc;
+  transform: translateY(-3px);
+}
+
+.primary:active {
+  box-shadow:
+    -0.05rem -0.05rem 0.1rem 0px #fff,
+    0.05rem 0.05rem 0.1rem 0px #bebebe;
+  transform: translateY(-1px);
+}
+
+.primary:focus {
+  box-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+}
+.primary:disabled {
+  opacity: 0.5;
+  background: #1a1a1a;
+  box-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+}
+
+.secondary {
+  border: 1px solid #0062cc;
+  box-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+  color: #0062cc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  font-size: 1.8rem;
+  font-family: "Roboto" sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.secondary:hover {
+  border: 1px solid transparent;
+  box-shadow:
+    0px 12px 24px 0px rgba(29, 78, 216, 0.32),
+    0px 2px 4px 0px rgba(59, 130, 246, 0.12);
+  transform: translateY(-3px);
+}
+
+.secondary:active {
+  border: 1px solid #020202;
+  box-shadow:
+    -5px -5px 10px 0px #fff,
+    5px 5px 10px 0px #bebebe;
+  transform: translateY(-1px);
+}
+
+.secondary:focus {
+  border: 2px solid #ededed;
+  box-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+}
+
+.secondary:disabled {
+  border: 1px solid #1a1a1a;
+  opacity: 0.5;
+  box-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+}
+
+.textonly {
+  text-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+  color: #0062cc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  font-family: "Roboto" sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.textonly:hover {
+  text-shadow:
+    0px 12px 24px 0px rgba(29, 78, 216, 0.32),
+    0px 2px 4px 0px rgba(59, 130, 246, 0.12);
+}
+
+.textonly:active {
+  text-shadow:
+    -5px -5px 10px 0px #fff,
+    5px 5px 10px 0px #bebebe;
+}
+
+.textonly:focus {
+  text-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+}
+
+.textonly:disabled {
+  opacity: 0.5;
+  text-shadow:
+    0px 2px 4px 0px rgba(52, 60, 68, 0.16),
+    0px 0px 1px 0px rgba(117, 131, 142, 0.04);
+}

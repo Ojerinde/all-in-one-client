@@ -15,8 +15,7 @@ const OtherAuthMethod: React.FC = () => {
       </div>
       <button
         onClick={() => otherMethodsHandler("/auth/google")}
-        type="button"
-        className="flex justify-center items-center gap-2 text-custom-blue-dark-3 w-full  cursor-pointer
+        className="flex justify-center items-center gap-4  w-full cursor-pointer
         py-4 text-[1.6rem] font-semibold bg-white border border-custom-black rounded shadow-[0px_2px_4px_0px_rgba(52,60,68,0.16),0px_0px_1px_0px_rgba(117,131,142,0.04)] hover:-translate-y-2 active:-translate-y-1 duration-300"
       >
         <svg
@@ -49,7 +48,7 @@ const OtherAuthMethod: React.FC = () => {
             />
           </g>
         </svg>
-        <span>Continue with Google</span>
+        <span className="text-custom-black-2">Continue with Google</span>
       </button>
     </>
   );

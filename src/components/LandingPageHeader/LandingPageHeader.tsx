@@ -6,7 +6,7 @@ import Button from "../UI/Button/Button.tsx";
 const LandingPageHeader = () => {
   const navigate = useNavigate();
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-full w-full overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black/80 to-custom-blue-dark-3/90" />
       <video className="h-full w-full object-cover" autoPlay muted loop>
         <source src={landingVideo} type="video/mp4" />

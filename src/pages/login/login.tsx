@@ -12,7 +12,7 @@ import AuthButton from "../../components/AuthComponents/AuthButton/AuthButton";
 import OtherAuthMethod from "../../components/AuthComponents/OtherAuthMethod/OtherAuthMethod";
 import AuthHeader from "../../components/AuthComponents/AuthHeader/AuthHeader";
 
-const LoginForm = () => {
+const Login = () => {
   // Show and Hide password state
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [showError, setShowError] = useState<{
@@ -51,9 +51,9 @@ const LoginForm = () => {
       }));
     } finally {
       actions.setSubmitting(false);
-      // setTimeout(() => {
-      //   setShowError(() => ({ hasError: false, message: "" }))
-      // }, 7000)
+      setTimeout(() => {
+        setShowError(() => ({ hasError: false, message: "" }));
+      }, 7000);
     }
   };
 
@@ -61,7 +61,10 @@ const LoginForm = () => {
     <section className="w-full flex justify-center items-center">
       <AuthModalCard>
         <div className="px-8 pt-8 pb-14">
-          <AuthHeader page="/login" />
+          <AuthHeader
+            page="/login"
+            header="Welcome Back to Your Learning Adventure"
+          />
           <Formik
             initialValues={initialValues}
             onSubmit={signInHandler}
@@ -139,14 +142,14 @@ const LoginForm = () => {
                 <p className="text-[1.4rem] mt-2 text-center text-custom-black tracking-wide">
                   By creating an account you agree to{" "}
                   <Link
-                    to="/"
+                    to="/terms"
                     className="text-custom-blue hover:text-custom-blue-light-2 duration-200"
                   >
                     Terms of Use
                   </Link>{" "}
                   and{" "}
                   <Link
-                    to="/"
+                    to="/policy"
                     className="text-custom-blue hover:text-custom-blue-light-2 duration-200"
                   >
                     Privacy Policy
@@ -161,4 +164,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Login;

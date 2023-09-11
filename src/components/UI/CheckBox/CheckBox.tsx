@@ -12,12 +12,12 @@ const CheckBox: React.FC<CheckBoxProps> = ({ name, checked, onChecked }) => {
     <>
       <input
         type="checkbox"
-        className={`${classes.input} cursor-pointer opacity-0 absolute h-8 w-8`}
+        className={`${classes.input}  cursor-pointer opacity-0 absolute h-8 w-8`}
         name={name}
         checked={checked}
         onChange={onChecked}
       />
-      <div className="bg-white border-2 rounded-md w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2">
+      <div className="bg-custom-blue-light-1 border-custom-blue-light-2 border-2 rounded-md w-8 h-8 flex flex-shrink-0 justify-center items-center mr-2">
         <svg
           className="hidden"
           width="32"
